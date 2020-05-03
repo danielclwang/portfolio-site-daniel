@@ -128,42 +128,15 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
-#profileimage {
-  width: 400px;
-}
-#aboutimage {
-  width: 400px;
-}
-#inksproject {
-  width: 400px;
-}
-#inksproject1 {
-  width: 400px;
-}
-#inksproject2 {
-  width: 400px;
-}
-#inksproject3 {
-  width: 400px;
-}
-#inksproject4 {
-  width: 400px;
-}
-#inksproject5 {
-  width: 400px;
-}
-#inksproject6 {
-  width: 400px;
-}
-#inksproject7 {
-  width: 400px;
+.inks-project-imgs {
+  max-width: 100%;
+  text-align: center;
 }
 #hero {
   background-color: #50e3c2;
@@ -218,6 +191,10 @@ main {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.wrapper {
+  padding: 20px;
+}
 .col-sm-3 {
   width: 25%;
 }
@@ -226,6 +203,9 @@ main {
 }
 .col-sm-6 {
   width: 50%;
+}
+.col-sm-8 {
+  width: 66.66%;
 }
 .col-sm-12 {
   width: 100%;
@@ -269,11 +249,9 @@ main {
   padding: 10px 0;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
-
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -295,6 +273,9 @@ Medium devices (640px and larger)
   }
   .col-md-6 {
     width: 50%;
+  }
+  .col-md-8 {
+    width: 66.66%;
   }
   .col-md-12 {
     width: 100%;
