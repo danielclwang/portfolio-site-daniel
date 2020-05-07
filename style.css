@@ -115,7 +115,7 @@ nav > ul > li > a {
 /* ---------------------- */
 a {
   /* element selector */
-  color: #fffff;
+  color: #ffffff;
 }
 .social-links svg {
   width: 30px;
@@ -173,9 +173,9 @@ a {
 #hero span {
   display: block;
 }
-main {
-  /* padding-top: 56px; */
-}
+
+/* padding-top: 56px; */
+
 @keyframes color-change {
   0% {
     fill: #edc655;
