@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(230, 230, 230);
+  background-color: #ffffff;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -36,29 +36,29 @@ svg {
   width: 100%;
 }
 a {
-  color: #50e3c2;
+  color: #000080;
   text-decoration: none; /* No underlining */
 }
 a:visited {
   /* visited link */
-  color: #50e3c2;
+  color: #000080;
 }
 a:hover {
-  color: #3aafa9;
+  color: #edc655;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active {
   /* selected link */
-  color: #2b7a78;
+  color: #7a2b76;
 }
 a:hover,
 a:focus {
-  color: #27c535;
+  color: #41c527;
   text-decoration: underline;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #50e3c2;
+  background-color: #ffffff;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -72,21 +72,50 @@ a:focus {
 }
 .button.contact {
   background-color: transparent;
-  color: #50e3c2 !important;
+  color: #505fe3 !important;
   text-transform: uppercase;
-  border: 2px solid #50e3c2;
+  border: 2px solid #000000;
 }
 .button.contact:hover {
-  background-color: #50e3c2;
+  background-color: #e35050;
   color: #ffffff !important;
 }
 #logo {
   width: 100px;
   height: auto;
 }
+/* ---------------------- */
+/* Navigation Styles */
+.nav-header {
+  background-color: #ffffff;
+  text-align: unset;
+  padding: 10px 0;
+  padding-top: 30px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+/* Navigation Styles End */
+/* ---------------------- */
 a {
   /* element selector */
-  color: #2b7a78;
+  color: #fffff;
 }
 .social-links svg {
   width: 30px;
@@ -96,15 +125,18 @@ a {
   width: 40px;
   height: 40px;
 }
-header {
-  background-color: #def2f1;
-  text-align: unset;
-  padding: 10px 0;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  margin: 10px;
+/* Profile Image styling */
+.profileImgWrapper {
+  display: inline-block;
+}
+#profileimage {
+  height: 200px;
+  width: auto;
+  border-radius: 100%;
+}
+/* Profile Image styling end */
+.intro-wrapper {
+  display: inline-block;
 }
 /* Layout styling */
 .container {
@@ -123,27 +155,16 @@ header {
 .center {
   text-align: center;
 }
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
 .inks-project-imgs {
   max-width: 100%;
   text-align: center;
 }
 #hero {
-  background-color: #50e3c2;
+  background-color: #ffffff;
   text-align: center;
 }
 #hero {
-  background-color: #50e3c2;
+  background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -153,7 +174,7 @@ nav > ul > li > a {
   display: block;
 }
 main {
-  padding-top: 56px;
+  /* padding-top: 56px; */
 }
 @keyframes color-change {
   0% {
@@ -191,7 +212,6 @@ main {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
 .wrapper {
   padding: 20px;
 }
@@ -224,19 +244,22 @@ main {
 .navtoggle li:last-child {
   display: block;
 }
-.navtoggle,
-.navtoggle.responsive {
+.navtoggle {
   position: relative;
 }
-.navtoggle,
 .navtoggle.responsive {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  background: #ffffff;
 }
 .navtoggle li .icon {
+  top: 0;
+  right: 0;
+  font-size: 30px;
   position: absolute;
-  padding-right: 0;
-  top: 2px;
-  font-size: 20px;
 }
 .navtoggle.responsive li {
   display: block;
@@ -252,6 +275,9 @@ main {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+.navtoggle.responsive li:first-child {
+  margin-top: 80px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -259,11 +285,6 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
   }
   .col-md-3 {
     width: 25%;
