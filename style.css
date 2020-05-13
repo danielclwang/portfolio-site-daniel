@@ -59,7 +59,7 @@ a:focus {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffffff;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #000000 !important; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -78,7 +78,7 @@ a:focus {
 }
 .button.contact:hover {
   background-color: #e35050;
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 #logo {
   width: 100px;
@@ -115,7 +115,7 @@ nav > ul > li > a {
 /* ---------------------- */
 a {
   /* element selector */
-  color: #ffffff;
+  color: #000000;
 }
 .social-links svg {
   width: 30px;
